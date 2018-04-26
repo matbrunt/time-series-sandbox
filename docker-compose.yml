@@ -1,0 +1,11 @@
+version: '3'
+services:
+  explore:
+    build:
+      context: ./docker
+      dockerfile: prophet.dockerfile
+    ports:
+      - "8888:8888"
+    volumes:
+      - ./src:/usr/src
+    command: jupyter notebook --no-browser --ip 0.0.0.0 --allow-root --NotebookApp.token=
