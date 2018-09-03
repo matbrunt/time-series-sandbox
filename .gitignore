@@ -36,6 +36,11 @@ src/notebooks/Untitled_files/
 .DS_Store/
 .vscode/
 
+# RStudio
+.RData
+.Rhistory
+.rstudio
+
 # exclude data from source control by default
 src/data/
 
@@ -43,3 +48,4 @@ src/credentials.txt
 src/bigquery_credentials.dat
 src/helpers/query.sql
 src/*-svc-account.json
+.Rproj.user

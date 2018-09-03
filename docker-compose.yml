@@ -9,3 +9,11 @@ services:
     volumes:
       - ./src:/usr/src
     command: jupyter notebook --no-browser --ip 0.0.0.0 --allow-root --NotebookApp.token=
+
+  rprophet:
+    image: honir/rprophet:latest
+    ports:
+      - "3838:3838"
+      - "8787:8787"
+    volumes:
+      - ./src:/home/rstudio
